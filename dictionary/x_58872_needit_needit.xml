@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="d8abe6e1835762101d2f5e65eeaad350" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="% complete" max_length="15" name="complete" type="percent_complete"/>
+        <element label="Target" max_length="20" name="target" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resources" sequence="2" value="hr"/>
